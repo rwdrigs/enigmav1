@@ -1,0 +1,51 @@
+
+body { font: 400 1em/1.5 "Neuton"; background: #090d00; color: rgba(0, 0, 0, 0.25); text-align: center; margin: 0 }
+
+span {
+
+  	font: 700 4em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+
+/* Clip Background Image */
+
+	  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+  }
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+.container {
+    width: 80%;
+    height: 0;
+    margin: 0 auto;
+    padding-bottom: 38%;
+    position: relative;
+    background-color: #ffffff;
+    color: #fff;
+    align-items: center;
+  }
+  .container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
